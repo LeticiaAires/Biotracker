@@ -10,7 +10,7 @@ def clear_screen():
 
 def display_title():
     """
-    Displays the title of the application.
+    Displays the title of the application
     """
     clear_screen()
     print("######################################")
