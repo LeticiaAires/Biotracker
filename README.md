@@ -1,6 +1,6 @@
 # Biotracker
 
-# Compost Monitoring System with Raspberry Pi and Environmental Sensors
+### Compost Monitoring System with Raspberry Pi and Environmental Sensors
 
 This project aims to track key environmental parameters in a composting system using a Raspberry Pi and various sensors. The goal is to monitor and evaluate the composting process, comparing real-time data with a reference database to determine whether the compost is progressing as expected. Based on the analysis, the system will provide suggestions (e.g., add more water or nitrogen) to help optimize the composting conditions.
 
@@ -21,7 +21,7 @@ This system is designed to provide continuous monitoring of a compost heap, help
 - Easy-to-read graphical interface for visualizing the composting environment.
 
 ## Hardware Requirements:
-- **Raspberry Pi 4 (or 5)**: The main controller for managing the sensors and processing the data.
+- **Raspberry Pi 5**: The main controller for managing the sensors and processing the data.
 - **pH sensor**: To measure the acidity or alkalinity of the compost.
 - **CO2 sensor**: To monitor the CO2 concentration in the compost environment.
 - **Methane sensor**: To detect methane gas levels.
@@ -38,7 +38,7 @@ This system is designed to provide continuous monitoring of a compost heap, help
 ### Install Dependencies:
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/compost-monitoring.git
+    git clone https://github.com/LeticiaAiresusername/Biotracker.git
     cd compost-monitoring
     ```
 

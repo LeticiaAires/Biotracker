@@ -1,0 +1,5 @@
+RPi.GPIO
+Adafruit-Blinka
+matplotlib
+pandas
+flask
