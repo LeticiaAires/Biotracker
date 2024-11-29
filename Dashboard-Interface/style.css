@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root{
-    --color-primary: #7380ec;
+    --color-primary: #73ec7f;
     --color-danger: #ff7782;
-    --color-success: #41f1b6;
+    --color-success: #417ff1;
     --color-warning: #ffbb55;
     --color-white: #fff;
     --color-info: #7d8da1;
@@ -127,11 +127,11 @@ header .navbar a:hover {
 }
 header .navbar a.active{
     background: var(--color-light);
-    color: var(--color-primary);
+    color: var(--color-success);
 }
 header .navbar a.active::before{
     content: "";
-    background-color: var(--color-primary);
+    background-color: var(--color-success);
     position: absolute;
     height: 5px;
     width: 100%;
@@ -163,7 +163,7 @@ header .theme-toggler span{
     justify-content: center;
 }
 header .theme-toggler span.active{
-    background-color: var(--color-primary);
+    background-color: var(--color-success);
     color: white;
     border-radius: var(--border-radius-1);
 }
@@ -222,13 +222,13 @@ main .subjects > div:hover{
     box-shadow: none;
 }
 main .subjects > div span{
-    background-color: var(--color-primary);
+    background-color: var(--color-success);
     padding: .5rem;
     border-radius: 50%;
     color: var(--color-white);
     font-size: 1.5rem;
 }
-main .subjects > div.mth span,main .subjects > div.cg span{background: var(--color-danger);}
+main .subjects > div.mth span,main .subjects > div.cg span{background: var(--color-success);}
 main .subjects > div.cs span{background: var(--color-success);}
 
 main .subjects h3{
