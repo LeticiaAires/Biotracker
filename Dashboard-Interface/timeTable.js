@@ -1,55 +1,55 @@
 const Sunday =[
     {   
         time: 'Sunday',
-        roomNumber: 'Holiday',
-        subject: 'No class Available',
-        type: ''
+        sensorNumber: '38-718',
+        subject: 'A1',
+        type: 'Error'
     }
 ]
 const Monday =[
     {   
         time: '09-10 AM',
         roomNumber: '38-718',
-        subject: 'DBMS130',
-        type: 'Lecture'
+        subject: 'A2',
+        type: 'Normal'
     },
     {   
         time: '10-11 AM',
         roomNumber: '38-718',
-        subject: 'MTH166',
-        type: 'Tutorial'
+        subject: 'A3',
+        type: ''
     },
     {   
         time: '12-01 PM',
         roomNumber: '38-718',
-        subject: 'NS200',
-        type: 'Lecture'
+        subject: 'A4',
+        type: 'Normal'
     }
 ]
 const Tuesday =[
     {   
         time: '09-10 AM',
         roomNumber: '27-304Y',
-        subject: 'MTH166',
-        type: 'Tutorial'
+        subject: 'B1',
+        type: 'High'
     },
     {   
         time: '11-12 AM',
         roomNumber: '28-107',
-        subject: 'CS849',
-        type: 'Lecture'
+        subject: 'C1',
+        type: 'Normal'
     },
     {   
         time: '12-01 PM',
         roomNumber: '28-107',
-        subject: 'CS849',
-        type: 'Lecture'
+        subject: 'C2',
+        type: 'High'
     },
     {   
         time: '02-03 PM',
         roomNumber: '38-718',
-        subject: 'NS200',
-        type: 'Lecture'
+        subject: 'A5',
+        type: 'Normal'
     }
 ]
 
@@ -57,14 +57,14 @@ const Wednesday =[
     {   
         time: '10-11 AM',
         roomNumber: '33-309',
-        subject: 'DBMS130',
-        type: 'Lecture'
+        subject: 'D1',
+        type: 'Normal'
     },
     {   
         time: '11-12 AM',
         roomNumber: '38-719',
-        subject: 'CS200',
-        type: 'Lecture'
+        subject: 'A6',
+        type: 'Normal'
     }
 ]
 
@@ -72,20 +72,20 @@ const Thursday =[
     {   
         time: '11-12 AM',
         roomNumber: '33-309',
-        subject: 'MTH166',
-        type: 'Lecture'
+        subject: 'D2',
+        type: 'High'
     },
     {   
         time: '01-02 PM',
         roomNumber: '38-719',
-        subject: 'CS849',
-        type: 'Lecture'
+        subject: 'A7',
+        type: 'Normal'
     },
     {   
         time: '02-03 PM',
         roomNumber: '38-718',
-        subject: 'NS200',
-        type: 'Lecture'
+        subject: 'A8',
+        type: 'Normal'
     }
 ]
 
@@ -93,20 +93,20 @@ const Friday =[
     {   
         time: '10-11 AM',
         roomNumber: '33-309',
-        subject: 'MEC103',
-        type: 'Lecture'
+        subject: 'D3',
+        type: 'Low'
     },
     {   
         time: '11-12 AM',
         roomNumber: '33-309',
-        subject: 'MEC103',
-        type: 'Lecture'
+        subject: 'D4',
+        type: 'Low'
     },
     {   
         time: '02-03 PM',
         roomNumber: '33-601',
-        subject: 'CS849',
-        type: 'Tutorial'
+        subject: 'D5',
+        type: 'Normal'
     },
 
 ]
@@ -115,19 +115,19 @@ const Saturday =[
     {   
         time: '09-10 AM',
         roomNumber: '34-604',
-        subject: 'DBMS130',
-        type: 'Tutorial'
+        subject: 'E1',
+        type: 'Normal'
     },
     {   
         time: '10-11 AM',
         roomNumber: '34-604',
-        subject: 'DBMS130',
-        type: 'Lecture'
+        subject: 'E2',
+        type: 'High'
     },
     {   
         time: '01-02 PM',
         roomNumber: '33-309',
-        subject: 'MTH166',
-        type: 'Lecture'
+        subject: 'D6',
+        type: 'Low'
     }
 ]
