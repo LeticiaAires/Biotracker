@@ -1,42 +1,26 @@
-import pandas as pd
+from flask import Flask, jsonify
+from flask_cors import CORS
 
-def process_data(data, clean=True, aggregation=None):
-    """
-    Processes raw data into a DataFrame, performs cleaning, and provides statistics.
+import random
 
-    Parameters:
-        data (list of dicts or dict): Raw data to be processed into a DataFrame.
-        clean (bool): Whether to perform data cleaning (default: True).
-        aggregation (dict): A dictionary for aggregating data (default: None).
-                            Format: {'column_name': 'aggregation_function'}.
-                            Example: {'temperature': 'mean'}
-
-    Returns:
-        dict: A dictionary with the following keys:
-            - 'summary': A statistical summary of the data.
-            - 'dataframe': The processed DataFrame.
-    """
-    # Convert raw data to a DataFrame
-    try:
-        df = pd.DataFrame(data)
-    except ValueError as e:
-        raise ValueError(f"Invalid data format: {e}")
-    
-    # Data cleaning: handle missing values
-    if clean:
-        df = df.fillna(method='ffill').fillna(method='bfill')  # Forward/backward fill missing values
-    
-    # Perform aggregation if specified
-    if aggregation:
-        try:
-            aggregated_df = df.groupby(aggregation.keys()).agg(aggregation)
-        except Exception as e:
-            raise ValueError(f"Error during aggregation: {e}")
-    else:
-        aggregated_df = df
-
-    # Return summary and processed data
+app = Flask(__name__)
+CORS(app)
+# Function to generate random sensor values
+def generate_sensor_data():
     return {
-        "summary": aggregated_df.describe(include="all").to_dict(),
-        "dataframe": aggregated_df
+        "carbon": random.randint(0, 100),
+        "nitrogen": random.randint(0, 100),
+        "co2": random.randint(0, 100),
+        "methane": random.randint(0, 100),
+        "moisture": random.randint(0, 100),
     }
+
+# Define the `/api/sensors` endpoint
+@app.route('/api/sensors', methods=['GET'])
+def get_sensor_data():
+    return jsonify(generate_sensor_data())
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
